@@ -11,7 +11,7 @@ public class Controller implements CounterListener {
     private Label currentCount;
 
     public void initialize () {
-        currentCount.setText("" + counter.getCount());
+        this.updateView(counter);
         counter.addCounterListener(this);
     }
 
@@ -23,7 +23,11 @@ public class Controller implements CounterListener {
         counter.decrementCount();
     }
 
+    public void updateView (Counter counter) {
+        currentCount.setText("" + counter.getCount());
+    }
+
     public void counterChanged(Counter counterThatChanged) {
-        currentCount.setText("" + counterThatChanged.getCount());
+        this.updateView(counterThatChanged);
     }
 }

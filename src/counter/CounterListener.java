@@ -1,5 +1,5 @@
 package counter;
 
 public interface CounterListener {
-    public void counterChanged();
+    public void counterChanged(int updatedCount);
 }

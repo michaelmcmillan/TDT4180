@@ -25,8 +25,12 @@ public class Counter {
         this.counterListeners.add(listener);
     }
 
+    public void removeCounterListener (CounterListener listener) {
+        this.counterListeners.remove(listener);
+    }
+
     private void notifyCounterListeners () {
         for (CounterListener counterListener : this.counterListeners)
-            counterListener.counterChanged();
+            counterListener.counterChanged(this.count);
     }
 }

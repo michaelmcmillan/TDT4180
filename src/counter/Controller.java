@@ -23,7 +23,7 @@ public class Controller implements CounterListener {
         counter.decrementCount();
     }
 
-    public void counterChanged() {
-        currentCount.setText("" + counter.getCount());
+    public void counterChanged(int updatedCount) {
+        currentCount.setText("" + updatedCount);
     }
 }

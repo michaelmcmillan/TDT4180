@@ -8,7 +8,7 @@
     </properties>
     <root id="root">
       <element id="archive" name="JavaFXApp.jar">
-        <element id="module-output" name="TDT4180-Counter" />
+        <element id="module-output" name="TDT4180" />
       </element>
     </root>
   </artifact>

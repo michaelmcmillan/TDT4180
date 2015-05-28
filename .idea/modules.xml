@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TDT4180-Counter.iml" filepath="$PROJECT_DIR$/TDT4180-Counter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TDT4180.iml" filepath="$PROJECT_DIR$/TDT4180.iml" />
     </modules>
   </component>
 </project>

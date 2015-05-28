@@ -31,6 +31,6 @@ public class Counter {
 
     private void notifyCounterListeners () {
         for (CounterListener counterListener : this.counterListeners)
-            counterListener.counterChanged(this.count);
+            counterListener.counterChanged(this);
     }
 }
